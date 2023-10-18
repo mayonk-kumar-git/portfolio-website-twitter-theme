@@ -34,8 +34,14 @@ export default function Message() {
   const handleOnClickSend = (event) => {
     // we are prventing default so that the form doesn't
     // get submitted twice
-    event.preventDefault();
-    event.target.form.submit();
+    if (message.trim()) {
+      event.preventDefault();
+      event.target.form.submit();
+    } else {
+      alert(
+        "I am already broke mann!! Please don't send blank messages and fill my server"
+      );
+    }
   };
 
   return (
@@ -79,7 +85,7 @@ export default function Message() {
           </div>
           {/* ------------------------------ */}
           <div className="flex flex-col w-full items-end mt-3">
-            <form name="contact" onKeyDown={handleFormTyping}>
+            <form name="contact" onKeyDown={handleFormTyping} netlify>
               <div className="flex items-end space-x-3">
                 <div className="flex flex-col items-end space-y-4">
                   <p className="text-xs text-[#828181] mt-5 text-justify">
@@ -90,7 +96,7 @@ export default function Message() {
                   <input
                     ref={nameInputBoxRef}
                     className={`text-center placeholder:italic placeholder:text-gray-500 block bg-transparent w-[80%] border-2 border-gray-900 rounded-xl p-3 mb-3 focus:outline-none focus:border-sky-500 sm:text-sm ${
-                      name.trim() !== "" ? " bg-sky-500 text-white" : ""
+                      name.trim() ? " bg-sky-500 text-white" : ""
                     }`}
                     placeholder="Your Name"
                     type="text"
@@ -101,7 +107,7 @@ export default function Message() {
                   <input
                     ref={mailIdInputBoxRef}
                     className={`text-center placeholder:italic placeholder:text-gray-500 block bg-transparent w-[80%] border-2 border-gray-900 rounded-xl p-3 focus:outline-none focus:border-sky-500 sm:text-sm ${
-                      mailId.trim() !== "" ? "bg-sky-500 text-white" : ""
+                      mailId.trim() ? "bg-sky-500 text-white" : ""
                     }`}
                     placeholder="your@mail.com"
                     type="text"
@@ -117,7 +123,7 @@ export default function Message() {
                     value={message}
                     onChange={(e) => setMessage(e.target.value)}
                     className={`resize-none text-left placeholder:text-center placeholder:italic placeholder:text-gray-500 block bg-transparent w-[80%] border-2 border-gray-900 rounded-xl p-3 focus:outline-none focus:border-sky-500 sm:text-sm ${
-                      message.trim() !== "" ? " bg-sky-500 text-white" : ""
+                      message.trim() ? " bg-sky-500 text-white" : ""
                     }`}
                   ></textarea>
                   <div
