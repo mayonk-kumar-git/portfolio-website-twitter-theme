@@ -21,7 +21,7 @@ export default function Header({
 
   return (
     <header className="z-50 sticky top-0 font-extrabold text-xl bg-[#0000007a] backdrop-blur-sm border-b border-gray-900">
-      <div className="flex space-x-4 p-7 items-center">
+      <div className="flex space-x-4 p-4 sm:p-7 items-center">
         {showBackArrow && (
           <BiArrowBack
             className="cursor-pointer hover:text-[#1D9BF0]"

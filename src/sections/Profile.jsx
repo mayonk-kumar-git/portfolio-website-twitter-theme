@@ -20,7 +20,7 @@ import { socialAccounts } from "../constants/SocialAccounts";
 
 function SocialHandles() {
   return (
-    <div className="flex p-4 space-x-2">
+    <div className="flex p-2 sm:p-4 space-x-2">
       {socialAccounts.map((account) => (
         <div key={nanoid()}>
           <a href={account.url} target="_blank" rel="noopener noreferrer">
@@ -36,13 +36,13 @@ function SocialHandles() {
 
 function ProfileHeroComponent() {
   return (
-    <div className="h-72">
+    <div className="h-64 lg:h-72">
       <img src={ProfileBanner} alt="profile banner" />
       <div className="flex flex-row justify-between">
         <img
           src={ProfilePicture}
           alt="profile picture"
-          className="h-32 w-32 rounded-full ml-5 -translate-y-[50%] border-4 border-black inline-block"
+          className="h-24 w-24 sm:h-32 sm:w-32 rounded-full ml-5 -translate-y-[50%] border-4 border-black inline-block"
         />
         <SocialHandles />
       </div>
