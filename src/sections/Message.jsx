@@ -79,7 +79,7 @@ export default function Message() {
           </div>
           {/* ------------------------------ */}
           <div className="flex flex-col w-full items-end mt-3">
-            <form name="contact" onKeyDown={handleFormTyping} netlify>
+            <form name="contact" onKeyDown={handleFormTyping}>
               <div className="flex items-end space-x-3">
                 <div className="flex flex-col items-end space-y-4">
                   <p className="text-xs text-[#828181] mt-5 text-justify">
