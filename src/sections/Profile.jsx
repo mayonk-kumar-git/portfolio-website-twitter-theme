@@ -123,7 +123,7 @@ function Content() {
         postsList = profileResume;
         break;
       }
-      case "Open-source": {
+      case "Opensource": {
         postsList = opensource;
         break;
       }
@@ -138,12 +138,12 @@ function Content() {
 
   return (
     <div className="mt-4">
-      <div className="flex items-center justify-evenly border-b-2 border-gray-900">
+      <div className="flex items-end justify-evenly border-b-2 border-gray-900">
         {contentType.map((item) => (
           <p
             key={nanoid()}
             onClick={() => setContentTypeInView(item)}
-            className={`basis-1/4 text-center cursor-pointer p-3 hover:bg-[#121212] font-medium 
+            className={`basis-1/4 text-center cursor-pointer p-1 py-3 sm:p-3 hover:bg-[#121212] text-sm sm:text-base sm:font-medium 
               ${
                 item === contentTypeInView
                   ? "text-white border-b-4 border-[#198CD8]"

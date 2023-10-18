@@ -50,13 +50,13 @@ export default function PostCard({ post }) {
         {/* Bio details start */}
         <div className="flex items-center space-x-1">
           {post.typeIcon}
-          <p className="text-[#828181] text-sm">{post.type}</p>
+          <p className="text-[#828181] text-xs sm:text-sm">{post.type}</p>
         </div>
-        <div className="flex space-x-3 items-center">
-          <p className="font-bold">{post.name}</p>
-          <p className="text-[#828181] text-sm">{post.userName}</p>
-          <p>·</p>
-          <p className="text-[#828181] text-sm">{post.date}</p>
+        <div className="flex flex-col sm:flex-row sm:space-x-3 sm:items-center">
+          <p className="font-bold text-sm sm:text-base">{post.name}</p>
+          <p className="text-[#828181] text-xs sm:text-sm">{post.userName}</p>
+          <p className="hidden sm:block">·</p>
+          <p className="text-[#828181] text-xs sm:text-sm">{post.date}</p>
         </div>
         {/* Post written content start */}
         {post.description && <div className="text-sm">{post.description}</div>}

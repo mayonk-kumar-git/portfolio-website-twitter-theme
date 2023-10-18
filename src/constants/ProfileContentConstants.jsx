@@ -41,7 +41,7 @@ const postTypeIconStyles = "text-[#828181] text-sm";
 
 // if you chnage the spelling of any of these types then make sure to
 // update the same in Profile.jsx <Content /> & <Posts />
-export const contentType = ["Post", "Resume", "Open-source", "Media"];
+export const contentType = ["Post", "Resume", "Opensource", "Media"];
 
 export const profilePosts = [
   {
