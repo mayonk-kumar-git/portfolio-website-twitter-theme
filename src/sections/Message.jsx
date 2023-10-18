@@ -25,7 +25,7 @@ export default function Message() {
 
   return (
     <div className="h-screen flex flex-col justify-between w-full">
-      <div className="h-[calc(100%-4rem)] overflow-y-auto">
+      <div className="h-[calc(100%-4rem)] overflow-y-auto overflow-x-hidden">
         <Header title="Message" showBackArrow={true} />
         <div className="flex flex-col justify-center items-center p-7 space-y-2 text-center">
           <img
@@ -89,11 +89,11 @@ export default function Message() {
                       return (
                         <>
                           {index != messageList.length - 1 ? (
-                            <p className="bg-[#1D9BF0] p-3 max-w-sm rounded-xl mb-2">
+                            <p className="bg-[#1D9BF0] p-3 max-w-[80%] rounded-xl mb-2 text-left">
                               {message}
                             </p>
                           ) : (
-                            <p className="bg-[#1D9BF0] py-3 pl-2 pr-4 max-w-sm rounded-t-xl rounded-bl-xl">
+                            <p className="bg-[#1D9BF0] py-3 pl-2 pr-4 max-w-[80%] rounded-t-xl rounded-bl-xl text-left">
                               {message}
                             </p>
                           )}

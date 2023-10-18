@@ -36,7 +36,7 @@ function SocialHandles() {
 
 function ProfileHeroComponent() {
   return (
-    <div className="h-64 lg:h-72">
+    <div className="h-fit">
       <img src={ProfileBanner} alt="profile banner" />
       <div className="flex flex-row justify-between">
         <img
