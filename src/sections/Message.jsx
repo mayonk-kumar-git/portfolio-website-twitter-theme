@@ -34,8 +34,8 @@ export default function Message() {
   const handleOnClickSend = (event) => {
     // we are prventing default so that the form doesn't
     // get submitted twice
+    event.preventDefault();
     if (message.trim()) {
-      event.preventDefault();
       event.target.form.submit();
     } else {
       alert(
@@ -85,7 +85,12 @@ export default function Message() {
           </div>
           {/* ------------------------------ */}
           <div className="flex flex-col w-full items-end mt-3">
-            <form name="contact" onKeyDown={handleFormTyping} netlify>
+            <form
+              name="Portfolio website form"
+              onKeyDown={handleFormTyping}
+              action="https://formspree.io/f/meqbvbkv"
+              method="POST"
+            >
               <div className="flex items-end space-x-3">
                 <div className="flex flex-col items-end space-y-4">
                   <p className="text-xs text-[#828181] mt-5 text-justify">
@@ -100,7 +105,7 @@ export default function Message() {
                     }`}
                     placeholder="Your Name"
                     type="text"
-                    name="Sender Name"
+                    name="Name"
                     value={name}
                     onChange={(e) => setName(e.target.value)}
                   />
@@ -110,8 +115,8 @@ export default function Message() {
                       mailId.trim() ? "bg-sky-500" : "bg-black"
                     }`}
                     placeholder="your@mail.com"
-                    type="text"
-                    name="Sender MailId"
+                    type="mail"
+                    name="MailId"
                     value={mailId}
                     onChange={(e) => setMailId(e.target.value)}
                   />
@@ -121,6 +126,8 @@ export default function Message() {
                     rows={4}
                     placeholder="Text..."
                     value={message}
+                    name="Message"
+                    required
                     onChange={(e) => setMessage(e.target.value)}
                     className={`resize-none text-left placeholder:text-center placeholder:italic placeholder:text-gray-500 block w-[80%] border-2 border-gray-900 rounded-xl p-3 focus:outline-none focus:border-sky-500 sm:text-sm ${
                       message.trim() ? " bg-sky-500" : "bg-black"
