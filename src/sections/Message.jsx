@@ -95,8 +95,8 @@ export default function Message() {
                   </p>
                   <input
                     ref={nameInputBoxRef}
-                    className={`text-center placeholder:italic placeholder:text-gray-500 block bg-transparent w-[80%] border-2 border-gray-900 rounded-xl p-3 mb-3 focus:outline-none focus:border-sky-500 sm:text-sm ${
-                      name.trim() ? " bg-sky-500 text-white" : ""
+                    className={`text-center placeholder:italic placeholder:text-gray-500 block w-[80%] border-2 border-gray-900 rounded-xl p-3 mb-3 focus:outline-none focus:border-sky-500 sm:text-sm ${
+                      name.trim() ? " bg-sky-500" : "bg-black"
                     }`}
                     placeholder="Your Name"
                     type="text"
@@ -106,8 +106,8 @@ export default function Message() {
                   />
                   <input
                     ref={mailIdInputBoxRef}
-                    className={`text-center placeholder:italic placeholder:text-gray-500 block bg-transparent w-[80%] border-2 border-gray-900 rounded-xl p-3 focus:outline-none focus:border-sky-500 sm:text-sm ${
-                      mailId.trim() ? "bg-sky-500 text-white" : ""
+                    className={`text-center placeholder:italic placeholder:text-gray-500 block w-[80%] border-2 border-gray-900 rounded-xl p-3 focus:outline-none focus:border-sky-500 sm:text-sm ${
+                      mailId.trim() ? "bg-sky-500" : "bg-black"
                     }`}
                     placeholder="your@mail.com"
                     type="text"
@@ -122,8 +122,8 @@ export default function Message() {
                     placeholder="Text..."
                     value={message}
                     onChange={(e) => setMessage(e.target.value)}
-                    className={`resize-none text-left placeholder:text-center placeholder:italic placeholder:text-gray-500 block bg-transparent w-[80%] border-2 border-gray-900 rounded-xl p-3 focus:outline-none focus:border-sky-500 sm:text-sm ${
-                      message.trim() ? " bg-sky-500 text-white" : ""
+                    className={`resize-none text-left placeholder:text-center placeholder:italic placeholder:text-gray-500 block w-[80%] border-2 border-gray-900 rounded-xl p-3 focus:outline-none focus:border-sky-500 sm:text-sm ${
+                      message.trim() ? " bg-sky-500" : "bg-black"
                     }`}
                   ></textarea>
                   <div
