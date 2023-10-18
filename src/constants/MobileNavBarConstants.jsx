@@ -3,16 +3,10 @@ import {
   BsFillPersonFill,
   BsFileCode,
   BsFileCodeFill,
-  BsPeopleFill,
-  BsPeople,
   BsPuzzleFill,
   BsPuzzle,
   BsTrophy,
   BsTrophyFill,
-  BsBook,
-  BsBookFill,
-  BsPalette,
-  BsFillPaletteFill,
   BsEnvelopePaper,
   BsEnvelopePaperFill,
 } from "react-icons/bs";
@@ -44,6 +38,14 @@ const mobileNavbarItems = [
     name: "Achievements",
     icon: <BsTrophy className={`${iconSize} ${marginRight}`} />,
     selectedIcon: <BsTrophyFill className={`${iconSize} ${marginRight}`} />,
+  },
+  {
+    id: "message",
+    name: "Message",
+    icon: <BsEnvelopePaper className={`${iconSize} ${marginRight}`} />,
+    selectedIcon: (
+      <BsEnvelopePaperFill className={`${iconSize} ${marginRight}`} />
+    ),
   },
 ];
 

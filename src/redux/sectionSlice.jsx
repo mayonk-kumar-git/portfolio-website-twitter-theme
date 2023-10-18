@@ -16,19 +16,8 @@ export const sectionSlice = createSlice({
     setPreviousSection: (state, action) => {
       state.previousSection = action.payload.previousSection;
     },
-    appendMessage: (state, action) => {
-      state.messageList.push(action.payload.message);
-    },
-    updateMessageList: (state, action) => {
-      state.messageList = action.payload.newMessageList;
-    },
   },
 });
 
-export const {
-  setSection,
-  setPreviousSection,
-  appendMessage,
-  updateMessageList,
-} = sectionSlice.actions;
+export const { setSection, setPreviousSection } = sectionSlice.actions;
 export default sectionSlice.reducer;
