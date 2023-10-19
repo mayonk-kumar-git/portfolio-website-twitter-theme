@@ -1,7 +1,7 @@
 import React from "react";
 
 import ProfilePic from "../components/ProfilePic";
-import MayonkProfilPic from "../assets/images/profile/profile-picture.png";
+import MayonkProfilPic from "../assets/images/profile/profile-picture.webp";
 
 import HashcodeScreenshot from "../assets/images/certificate/hash-code-screenshot.webp";
 import HashcodeCertificate from "../assets/images/certificate/hash-code-certificate.webp";
@@ -59,6 +59,24 @@ export const achievements = [
     imageList: [
       <img loading="lazy" src={ICPCCertificate} alt="ICPC lcertificate" />,
     ],
+    videoList: null,
+    links: null,
+  },
+  {
+    profilPic: <ProfilePic profilePic={MayonkProfilPic} />,
+    name: "Mayonk Kumar Behera",
+    userName: "@MayonkKumar",
+    date: "4 Aug",
+    type: null,
+    typeIcon: null,
+    description: (
+      <p>
+        | 📚 Xth Board: <u>92.3% ICSE!</u> <br />| 🎓 XIIth Board:{" "}
+        <u>95.6% CBSE!</u> <br />| 🏆 B.tech CSE <u>CGPA: 9.1</u>
+      </p>
+    ),
+    hashTags: "#StudentLife #KnowledgeIsPower #GraduationJourney",
+    imageList: null,
     videoList: null,
     links: null,
   },

@@ -3,8 +3,8 @@ import React from "react";
 import ProfilePic from "../components/ProfilePic";
 
 import OpensourceMayonkProfilPic from "../assets/images/profile/opensource-mayonk-profil-pic.webp";
-import Opensource1 from "../assets/images/opensource/opensource1.png";
-import Opensource2 from "../assets/images/opensource/opensource2.png";
+import Opensource1 from "../assets/images/opensource/opensource1.webp";
+import Opensource2 from "../assets/images/opensource/opensource2.webp";
 
 export const opensource = [
   {

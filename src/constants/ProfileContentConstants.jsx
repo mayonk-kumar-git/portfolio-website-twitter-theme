@@ -3,7 +3,7 @@ import { TbRepeat } from "react-icons/tb";
 
 import ProfilePic from "../components/ProfilePic";
 
-import MayonkProfilPic from "../assets/images/profile/profile-picture.png";
+import MayonkProfilPic from "../assets/images/profile/profile-picture.webp";
 import SDEMayonkProfilPic from "../assets/images/profile/sde-mayonk-profil-pic.jpeg";
 import ArtMayonkProfilPic from "../assets/images/profile/art-mayonk-profile-pic.webp";
 import OpensourceMayonkProfilPic from "../assets/images/profile/opensource-mayonk-profil-pic.webp";
@@ -222,6 +222,7 @@ export const profilePosts = [
     imageList: null,
     videoList: [
       <video
+        preload="none"
         className="aspect-video object-cover"
         src={Blender1}
         loop
@@ -231,6 +232,7 @@ export const profilePosts = [
         poster={ThumbnailBlender1}
       />,
       <video
+        preload="none"
         className="aspect-video object-cover"
         src={Blender2}
         loop
@@ -240,6 +242,7 @@ export const profilePosts = [
         poster={ThumbnailBlender2}
       />,
       <video
+        preload="none"
         className="aspect-video object-cover"
         src={Blender3}
         loop
@@ -249,6 +252,7 @@ export const profilePosts = [
         poster={ThumbnailBlender3}
       />,
       <video
+        preload="none"
         className="aspect-video object-cover"
         src={Blender4}
         loop

@@ -1,7 +1,7 @@
 import React from "react";
 
 import ProfilePic from "../components/ProfilePic";
-import MayonkProfilPic from "../assets/images/profile/profile-picture.png";
+import MayonkProfilPic from "../assets/images/profile/profile-picture.webp";
 
 export const academics = [
   {

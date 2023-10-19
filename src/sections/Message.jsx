@@ -3,7 +3,7 @@ import { BsFillPersonFill } from "react-icons/bs";
 import { FiSend } from "react-icons/fi";
 
 import Header from "../components/Header";
-import ProfilePhoto from "../assets/images/profile/profile-picture.png";
+import ProfilePhoto from "../assets/images/profile/profile-picture.webp";
 
 export default function Message() {
   const [name, setName] = useState("");

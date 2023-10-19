@@ -1,7 +1,7 @@
 import React from "react";
 
 import ProfilePic from "../components/ProfilePic";
-import MayonkProfilPic from "../assets/images/profile/profile-picture.png";
+import MayonkProfilPic from "../assets/images/profile/profile-picture.webp";
 
 import Art1 from "../assets/images/art/IMG_1.webp";
 import Art2 from "../assets/images/art/IMG_2.webp";
@@ -261,6 +261,7 @@ export const blenderVideos = [
     imageList: null,
     videoList: [
       <video
+        preload="none"
         className="object-cover"
         src={Blender1}
         loop
@@ -288,6 +289,7 @@ export const blenderVideos = [
     imageList: null,
     videoList: [
       <video
+        preload="none"
         className="object-cover"
         src={Blender2}
         loop
@@ -315,6 +317,7 @@ export const blenderVideos = [
     imageList: null,
     videoList: [
       <video
+        preload="none"
         className="object-cover"
         src={Blender3}
         loop
@@ -342,6 +345,7 @@ export const blenderVideos = [
     imageList: null,
     videoList: [
       <video
+        preload="none"
         className="object-cover"
         src={Blender4}
         loop

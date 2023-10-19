@@ -1,6 +1,6 @@
 import ProfilePic from "../components/ProfilePic";
 
-import MayonkProfilPic from "../assets/images/profile/profile-picture.png";
+import MayonkProfilPic from "../assets/images/profile/profile-picture.webp";
 import AmazonAnimatedLogo from "../assets/images/profile/amazon-animated-logo.gif";
 
 export const experienceList = [

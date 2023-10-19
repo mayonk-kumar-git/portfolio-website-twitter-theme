@@ -14,7 +14,7 @@ import {
 import { opensource } from "../constants/OpensourceConstants";
 
 import ProfileBanner from "../assets/images/profile/profile-banner.webp";
-import ProfilePicture from "../assets/images/profile/profile-picture.png";
+import ProfilePicture from "../assets/images/profile/profile-picture.webp";
 import PostCard from "../components/PostCard";
 import { socialAccounts } from "../constants/SocialAccounts";
 
