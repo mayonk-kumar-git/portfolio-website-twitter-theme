@@ -227,7 +227,6 @@ export const profilePosts = [
         src={Blender1}
         loop
         controls
-        autoPlay
         muted
         poster={ThumbnailBlender1}
       />,
@@ -237,7 +236,6 @@ export const profilePosts = [
         src={Blender2}
         loop
         controls
-        autoPlay
         muted
         poster={ThumbnailBlender2}
       />,
@@ -247,7 +245,6 @@ export const profilePosts = [
         src={Blender3}
         loop
         controls
-        autoPlay
         muted
         poster={ThumbnailBlender3}
       />,
@@ -257,7 +254,6 @@ export const profilePosts = [
         src={Blender4}
         loop
         controls
-        autoPlay
         muted
         poster={ThumbnailBlender4}
       />,

@@ -300,7 +300,6 @@ export const projects = [
         src={Project4Video}
         loop
         controls
-        autoPlay
         muted
         poster={Project4Thumbnail}
       />,
@@ -352,7 +351,6 @@ export const projects = [
         src={Project5Video}
         loop
         controls
-        autoPlay
         muted
         poster={Project5Thumbnail}
       />,
@@ -403,7 +401,6 @@ export const projects = [
         src={Project6Video}
         loop
         controls
-        autoPlay
         muted
         poster={Project6Thumbnail}
       />,
