@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { RiChat1Line } from "react-icons/ri";
+import { RiChat1Line, RiChat1Fill } from "react-icons/ri";
 import { TbRepeat } from "react-icons/tb";
 import { AiOutlineHeart, AiFillHeart } from "react-icons/ai";
 import { BiBarChart } from "react-icons/bi";
@@ -10,14 +10,29 @@ import { nanoid } from "@reduxjs/toolkit";
 
 function PostInteractionButtons() {
   const [liked, setLiked] = useState(false);
+  const [commented, setCommented] = useState(false);
+  const [retwitted, setRetwitted] = useState(false);
+  const [shared, setShared] = useState(false);
   const iconStyle = "p-2 h-9 w-9 rounded-full cursor-pointer";
   return (
     <div className="flex justify-between mt-4 text-[#828181] px-4">
-      <RiChat1Line
-        className={`${iconStyle} hover:bg-[#83ccfc28] hover:text-[#198CD8]`}
-      />
+      {commented ? (
+        <RiChat1Fill
+          onClick={() => setCommented(false)}
+          className={`${iconStyle} hover:bg-[#83ccfc28] text-[#198CD8]`}
+        />
+      ) : (
+        <RiChat1Line
+          onClick={() => setCommented(true)}
+          className={`${iconStyle} hover:bg-[#83ccfc28] hover:text-[#198CD8]`}
+        />
+      )}
+
       <TbRepeat
-        className={`${iconStyle} hover:bg-[#83fcd028] hover:text-[#19d892]`}
+        onClick={() => setRetwitted(!retwitted)}
+        className={`${iconStyle} hover:bg-[#83fcd028] hover:text-[#19d892] ${
+          retwitted ? " text-[#19d892]" : ""
+        }`}
       />
       {liked ? (
         <AiFillHeart
@@ -34,7 +49,10 @@ function PostInteractionButtons() {
         className={`${iconStyle} hover:bg-[#83ccfc28] hover:text-[#198CD8]`}
       />
       <FiShare
-        className={`${iconStyle} hover:bg-[#83ccfc28] hover:text-[#198CD8]`}
+        onClick={() => setShared(!shared)}
+        className={`${iconStyle} hover:bg-[#83ccfc28] hover:text-[#198CD8] ${
+          shared ? " text-[#198CD8]" : ""
+        }`}
       />
     </div>
   );
@@ -52,11 +70,11 @@ export default function PostCard({ post }) {
           {post.typeIcon}
           <p className="text-[#828181] text-xs sm:text-sm">{post.type}</p>
         </div>
-        <div className="flex flex-col sm:flex-row sm:space-x-3 sm:items-center">
-          <p className="font-bold text-sm sm:text-base">{post.name}</p>
-          <p className="text-[#828181] text-xs sm:text-sm">{post.userName}</p>
-          <p className="hidden sm:block">·</p>
-          <p className="text-[#828181] text-xs sm:text-sm">{post.date}</p>
+        <div className="flex flex-col lg:flex-row lg:space-x-3 lg:items-center">
+          <p className="font-bold text-sm lg:text-base">{post.name}</p>
+          <p className="text-[#828181] text-xs lg:text-sm">{post.userName}</p>
+          <p className="hidden lg:block">·</p>
+          <p className="text-[#828181] text-xs lg:text-sm">{post.date}</p>
         </div>
         {/* Post written content start */}
         {post.description && <div className="text-sm">{post.description}</div>}
