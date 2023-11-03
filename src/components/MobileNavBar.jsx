@@ -12,7 +12,7 @@ export default function MobileNavBar() {
     dispatch(setPreviousSection({ previousSection: sectionInView }));
   };
   return (
-    <div className="flex sm:hidden justify-around items-center z-[999] fixed bottom-0 w-full pt-5 pb-9 bg-[#000000a2] backdrop-blur-lg">
+    <div className="flex sm:hidden justify-around items-center z-[998] fixed bottom-0 w-full pt-5 pb-9 bg-[#000000a2] backdrop-blur-lg">
       {mobileNavbarItems.map((item) => (
         <div
           key={nanoid()}

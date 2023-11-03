@@ -7,7 +7,7 @@
 #preloader-logo path {
   stroke-dasharray: 1273px;
   stroke-dashoffset: 1273px;
-  animation: line-animation 2s ease-in-out infinite;
+  animation: line-animation 1.5s ease-in-out infinite;
   opacity: 0.3;
 }
 

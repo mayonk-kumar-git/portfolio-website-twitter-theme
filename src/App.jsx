@@ -9,14 +9,9 @@ import PreLoader from "./components/PreLoader";
 function App() {
   const [isLoading, setIsLoading] = useState(true);
   useEffect(() => {
-    const hidePreLoader = () => {
-      console.log("Loaded");
-      setTimeout(() => setIsLoading(false), 2500);
-    };
-
-    window.addEventListener("load", hidePreLoader);
+    const loader = setTimeout(() => setIsLoading(false), 3000);
     return () => {
-      window.removeEventListener("load", hidePreLoader);
+      clearTimeout(loader);
     };
   }, []);
 
