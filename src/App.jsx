@@ -1,12 +1,28 @@
+import React, { useState, useEffect } from "react";
 import "./App.css";
 import NavBar from "./components/NavBar";
 import MainSection from "./sections/MainSection";
 import RightSection from "./sections/RightSection";
 import MobileNavBar from "./components/MobileNavBar";
+import PreLoader from "./components/PreLoader";
 
 function App() {
+  const [isLoading, setIsLoading] = useState(true);
+  useEffect(() => {
+    const hidePreLoader = () => {
+      console.log("Loaded");
+      setTimeout(() => setIsLoading(false), 2500);
+    };
+
+    window.addEventListener("load", hidePreLoader);
+    return () => {
+      window.removeEventListener("load", hidePreLoader);
+    };
+  }, []);
+
   return (
     <div className="flex flex-row">
+      {isLoading && <PreLoader />}
       <div className="flex-auto hidden sm:block xl:min-w-[245px] md:basis-1/6 lg:basis-1/6 xl:basis-1/6">
         <NavBar />
       </div>

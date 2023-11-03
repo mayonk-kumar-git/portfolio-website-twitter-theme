@@ -2,3 +2,17 @@
   max-width: 1280px;
   margin: 0 auto;
 }
+
+/* This #preloader-logo id is present in components/Preloader.jsx file */
+#preloader-logo path {
+  stroke-dasharray: 1273px;
+  stroke-dashoffset: 1273px;
+  animation: line-animation 2s ease-in-out infinite;
+  opacity: 0.6;
+}
+
+@keyframes line-animation {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
