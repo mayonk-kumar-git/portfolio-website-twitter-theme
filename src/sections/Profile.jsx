@@ -76,7 +76,7 @@ function Bio() {
       </div>
       <div>
         <a
-          href="https://drive.google.com/file/d/1NNfgmd3jsg1714qErczf7Tf6ippcL2th/view?usp=drive_link"
+          href="https://drive.google.com/file/d/1Epj5hMtQt0SZ-xzSp1yKjwrpIyq6Sn8k/view?usp=drive_link"
           target="_blank"
           rel="noopener noreferrer"
           className="inline-flex items-center"
