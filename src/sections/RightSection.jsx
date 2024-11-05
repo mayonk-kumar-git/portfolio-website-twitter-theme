@@ -26,11 +26,7 @@ export default function RightSection() {
         <p className="text-xl lg:text-2xl font-bold mb-4">#OpenToWork</p>
         <div>
           <a
-<<<<<<< HEAD
-            href="https://drive.google.com/file/d/1Epj5hMtQt0SZ-xzSp1yKjwrpIyq6Sn8k/view?usp=drive_link"
-=======
             href="https://drive.google.com/file/d/1Epj5hMtQt0SZ-xzSp1yKjwrpIyq6Sn8k/view?usp=sharing"
->>>>>>> msigma-experience
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center text-sm"
