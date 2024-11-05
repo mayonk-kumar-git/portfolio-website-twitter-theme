@@ -56,8 +56,8 @@ function Bio() {
       <p className="text-xl font-bold">Mayonk Kumar Behera</p>
       <p className="text-[#828181] text-sm mb-4">@MayonkKumar</p>
       <p>
-        | Software Engineer <br />| Ex-SDE Intern'23 @Amazon <br />| ACM ICPC
-        Regionalist'20
+        SDE @Amazon <br />| Ex-iOS Dev @MsigmaGokulam <br />| Ex-SDE Intern'23
+        @Amazon <br />| ACM ICPC Regionalist'20
       </p>
       <div className="flex mt-4 items-center">
         <MdOutlineLocationOn />

@@ -14,6 +14,6 @@ export const socialAccounts = [
   { icon: <BiLogoGithub />, url: "https://github.com/mayonk-kumar-git" },
   {
     icon: <BiLogoInstagram />,
-    url: "https://www.instagram.com/_mayank._.kumar_/",
+    url: "https://www.instagram.com/_mayonk._.kumar_/",
   },
 ];
