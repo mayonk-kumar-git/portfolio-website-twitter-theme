@@ -280,7 +280,7 @@ export const profileResume = [
     hashTags: "#Resume #JobSeeker #CareerOpportunity",
     imageList: [
       <a
-        href="https://drive.google.com/file/d/1NNfgmd3jsg1714qErczf7Tf6ippcL2th/view?usp=drive_link"
+        href="https://drive.google.com/file/d/1Epj5hMtQt0SZ-xzSp1yKjwrpIyq6Sn8k/view?usp=sharing"
         target="_blank"
         rel="noopener noreferrer"
       >
@@ -295,7 +295,7 @@ export const profileResume = [
     videoList: null,
     links: [
       {
-        url: "https://drive.google.com/file/d/1NNfgmd3jsg1714qErczf7Tf6ippcL2th/view?usp=drive_link",
+        url: "https://drive.google.com/file/d/1Epj5hMtQt0SZ-xzSp1yKjwrpIyq6Sn8k/view?usp=sharing",
         hyperlinkText: "Resume",
       },
     ],

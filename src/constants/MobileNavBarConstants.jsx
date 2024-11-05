@@ -12,7 +12,7 @@ import {
 } from "react-icons/bs";
 
 const iconSize = "h-6 w-6";
-const marginRight = "mr-4 xl:mr-0";
+const marginRight = "mr-0";
 
 const mobileNavbarItems = [
   {

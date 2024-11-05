@@ -45,7 +45,7 @@ export default function NavBar() {
         <NavItem key={item.id} item={item} />
       ))}
       <a
-        href="https://drive.google.com/file/d/1NNfgmd3jsg1714qErczf7Tf6ippcL2th/view?usp=drive_link"
+        href="https://drive.google.com/file/d/1Epj5hMtQt0SZ-xzSp1yKjwrpIyq6Sn8k/view?usp=sharing"
         target="_blank"
         rel="noopener noreferrer"
         className="flex justify-center items-center bg-[#1D9BF0] w-fit xl:w-full xl:py-3 rounded-full cursor-pointer mr-5 xl:m-0"
